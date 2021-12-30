@@ -1,4 +1,9 @@
+<?php
 
+include("data.php");
+
+
+?>
 <html>
 <head>
    
@@ -7,7 +12,7 @@
 
 
 </head>
-<body onload="cyce()" >
+<body >
 
     <div  class="cycki" width=1280px height=300px>
        
@@ -18,13 +23,13 @@
     <div id="menu">
     
   
-     <img src="https://cdni.pornpics.com/1280/1/86/91149212/91149212_013_0039.jpg"/>     
+          
 
    
          
  
 
-    <a href='Linki.php' class="menubutton">Linki</a><br>
+    <a href='Linki.php?hello=true' class="menubutton">Linki</a><br>
  
   <button class="menubutton">Pics</button><br>
   <button class="menubutton">Video</button>

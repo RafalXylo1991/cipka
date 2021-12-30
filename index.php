@@ -1,4 +1,9 @@
+<?php
 
+include("data.php");
+
+
+?>
 <html>
 <head>
    
@@ -18,7 +23,7 @@
     <div id="menu">
     
   
-     <img src="https://cdni.pornpics.com/1280/1/86/91149212/91149212_013_0039.jpg"/>     
+          
 
    
          
