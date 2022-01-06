@@ -8,7 +8,7 @@ const session= require('express-session')
 //import index rout
 const routes = require('./routes/index')
 const pagesController = require('./controlers/PagesController')
-
+const port = process.env.PORT || 3000;
 
 app.set('views',path.join(__dirname,'views'));
 //ejs render engin
@@ -34,6 +34,6 @@ app.use(
 app.use('/',routes); 
 
 
-app.listen(3000||process.env.PORT);
+app.listen(port);
 
  
