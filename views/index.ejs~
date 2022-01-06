@@ -1,0 +1,18 @@
+<html>  
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+<body>  
+<div id="maindiv">
+<form action="/addPerson" method="POST"> <br>
+<label class="lab">Name</label>  <br>   <input class="field" type="text" name="ame">  <br>  
+<label class="lab">Age</label>  <br>   <input class="field" type="text" name="age"> <br> 
+<label class="lab">Sex</label>  <br>   <input class="field" type="text" name="sex"> <br> <br>
+<input class="menubutton" type="submit" value="Submit">  
+</form> 
+
+
+</div>
+
+</body>  
+</html> 

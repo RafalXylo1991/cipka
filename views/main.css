@@ -1,6 +1,5 @@
 body{
-background-image: url(tlo.jpg);
-background-repeat: no-repeat;
+
 }
 .cycki{
    margin: 20px;
@@ -58,6 +57,19 @@ margin-right: auto;
 
 
 }
+#maindiv{
+margin: auto;
+width: 300;
+height: 500;
+margin-top: 300px;
+
+}
+.lab{
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+
+}
 #lista{
 float: right;
 
@@ -77,6 +89,14 @@ border-width: 10px;
 
 
 }
+.field{
+border-left-style:hidden;
+border-right-style: hidden;
+border-top-style: hidden;
+outline:none;
+text-align: center;
+
+ }
 .menubutton{
 width: 100;
     margin-left: auto;

@@ -1,0 +1,47 @@
+
+<html>
+<head>
+   
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+</head>
+<body >
+
+    <div  class="cycki" width=1280px height=300px>
+     <script>
+let request = async () => {
+    const response = await fetch('http://localhost:3000/');
+    const data = await response.json();
+    
+    document.write(data);
+}
+
+</script>
+  
+       <p  id="title">Moje dane</p>
+</div>
+<div id="glowny">
+
+    <div id="menu">
+   
+   
+   
+         
+ 
+
+    <a href='Linki.php' class="menubutton">Linki</a><br>
+ 
+  <button class="menubutton">Pics</button><br>
+  <button class="menubutton">Video</button>
+  </form>
+</div>
+ <div name="cipa"  id="insert">
+     
+
+
+</div>
+</div>
+
+</body>
+</html>

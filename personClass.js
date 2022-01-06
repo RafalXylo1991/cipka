@@ -1,0 +1,4 @@
+class person{
+var name
+
+}
