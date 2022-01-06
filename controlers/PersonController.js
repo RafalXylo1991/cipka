@@ -1,13 +1,14 @@
 
 exports.add=(req,res)=>{
     var knex = require('knex')({
-        client: 'postgres',
+        client: 'pg',
         connection: {
-            host: 'ec2-34-206-245-175.compute-1.amazonaws.com',
+            host: '44.192.106.205',
             port: '5432',
             user: 'cqjfwevhnzxylb',
             password: 'ce621d9ec5436ed08682da6e9312d30351fb9d9aa064e68456b7b4644cc25de7',
-            database: 'dbv35e6rfu874d'
+            database: 'dbv35e6rfu874d',
+            
         }
     });
     
@@ -50,11 +51,14 @@ exports.print = (req,res) =>{
     var knex = require('knex')({
         client: 'pg',
         connection: {
-            host: 'localhost',
+
+            host: '44.192.106.205',
             port: '5432',
-            user: 'xyloh',
-            password: 'xylo1991',
-            database: 'cycki'
+            user: 'cqjfwevhnzxylb',
+            password: 'ce621d9ec5436ed08682da6e9312d30351fb9d9aa064e68456b7b4644cc25de7',
+            database: 'dbv35e6rfu874d',
+           
+            
         }
     });
 
@@ -73,7 +77,7 @@ exports.print = (req,res) =>{
                     name:row.name,
                     age:row.wiek,
                     sex:row.sex,
-                    src:row.imgsrc
+                    src:row.src
                    })
                  
                 }
