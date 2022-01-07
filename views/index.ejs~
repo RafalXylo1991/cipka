@@ -3,13 +3,14 @@
         <link rel="stylesheet" href="main.css">
     </head>
 <body>  
-<div id="maindiv">
-<form action="/addPerson" method="POST"> <br>
-<label class="lab">Name</label>  <br>   <input class="field" type="text" name="ame">  <br>  <br> 
-<label class="lab">Age</label>  <br>   <input class="field" type="text" name="age"> <br> <br> 
-<label class="lab">Sex</label>  <br>   <input class="field" type="text" name="sex"> <br> <br>
-<input class="menubutton" type="submit" value="Submit">  
-</form> 
+
+<div id="maindiv" >
+
+<a href="/printPerson" ><p>Pictures</p><img width="400" src="pic.png" alt=""/></a>
+
+<a href=""  ><p>Videos</p><img width="400" src="video.png" alt=""/></a>
+
+
 
 
 </div>

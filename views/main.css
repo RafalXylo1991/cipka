@@ -1,5 +1,7 @@
 body{
-
+background-image: url("tlo.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 .cycki{
    margin: 20px;
@@ -57,11 +59,33 @@ margin-right: auto;
 
 
 }
+img{
+opacity: 20%;
+border-radius: 50px;
+margin-bottom: 20px;
+}
+img:hover{
+	opacity: 90%;
+
+  
+}
+#content{
+float: right;
+}
 #maindiv{
-margin: auto;
-width: 300;
-height: 500;
-margin-top: 300px;
+margin-left: 100px;
+margin-top: 100px;
+width: 600;
+height: 800;
+
+border-image-width: 20px;
+
+}
+#menu{
+float: left;
+height: auto;
+width: 200px;
+background-color: red
 
 }
 .lab{
@@ -140,7 +164,11 @@ width: 100;
  
   transform: translateY(-2px);
 }
-
+p{
+width: auto;
+font-size: 20px;
+text-align: center;
+}
 .button-30:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);

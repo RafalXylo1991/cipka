@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "node server.js",
-    "migrate":"npx knex migrate:latest --knexfile knexfile.js"
+    "migrate": "npx knex migrate:latest --knexfile knexfile.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +24,7 @@
     "nedb": "^1.8.0",
     "nodemon": "^2.0.15",
     "objection": "^3.0.1",
+    "onedrive-api": "^1.0.3",
     "pg": "^8.7.1",
     "pg-cursor": "^2.7.1",
     "pug": "^3.0.2",
