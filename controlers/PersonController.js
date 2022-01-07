@@ -3,12 +3,11 @@ exports.add=(req,res)=>{
     var knex = require('knex')({
         client: 'pg',
         connection: {
-            host: '44.192.106.205',
+            host: 'localhost',
             port: '5432',
-            user: 'cqjfwevhnzxylb',
-            password: 'ce621d9ec5436ed08682da6e9312d30351fb9d9aa064e68456b7b4644cc25de7',
-            database: 'dbv35e6rfu874d',
-            
+            user: 'xyloh',
+            password: 'xylo1991',
+            database: 'cycki'
         }
     });
     
@@ -16,10 +15,10 @@ exports.add=(req,res)=>{
         try{
             knex('person')
             .insert({
+              
               name: req.body.ame,
-              age: req.body.age,
-              sex: req.body.sex,
-              src: req.body.srcimg
+              age:  req.body.age,
+              sex:  req.body.sex
             }).then(() => console.log("data inserted"))
             .catch((err) => { console.log(err); throw err })
             .finally(() => {
@@ -51,14 +50,11 @@ exports.print = (req,res) =>{
     var knex = require('knex')({
         client: 'pg',
         connection: {
-
-            host: '44.192.106.205',
+            host: 'ec2-34-206-245-175.compute-1.amazonaws.com',
             port: '5432',
             user: 'cqjfwevhnzxylb',
             password: 'ce621d9ec5436ed08682da6e9312d30351fb9d9aa064e68456b7b4644cc25de7',
-            database: 'dbv35e6rfu874d',
-           
-            
+            database: 'dbv35e6rfu874d'
         }
     });
 
@@ -67,24 +63,25 @@ exports.print = (req,res) =>{
             .then((rows) => {
                
                 
-                for (row of rows) {
+          
+                if(is==false){
+                    for (row of rows) {
                     
                    
                     
                        
                
-                cycki.push( {
-                    name:row.name,
-                    age:row.wiek,
-                    sex:row.sex,
-                    src:row.src
-                   })
-                 
-                }
-                if(is==false){
-                res.render('printPerson',{per:cycki});
+                        cycki.push( {
+                            name:row.name,
+                            age:row.age,
+                            sex:row.sex,
+                            src:row.src
+                           })
+                         
+                        }
                 is=true;
                 }
+                res.render('printPerson',{per:cycki})
             }).catch((err) => { console.log( err); throw err })
             .finally(() => {
                 knex.destroy();
@@ -98,5 +95,5 @@ exports.print = (req,res) =>{
    
 
       
-
+exports.is
 }

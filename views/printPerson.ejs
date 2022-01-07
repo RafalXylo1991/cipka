@@ -11,30 +11,44 @@
 
  
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
 
+#list{
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+
+}
+p{
+width: auto;
+text-align: center;
+border-width: 20px;
+border-color: darkgray;
+}
+</style>
 
 
 </head>
 
 <body>
-    <ul>
+   
         <% per.forEach((per)=> { %>
-            <li>
-                <h2>
+            <div id="list">
+                <p >
                     <%= per.name %>
-                </h2>
-                <p>
+                </p>
+                <p >
                     <%= per.age %>
                 </p>
                 <p>
                     <%= per.sex %>
                 </p>
                 <p>
-                  <img src='<%= per.src %>'/>
+                  <img width="400" src='<%= per.src %>'/>
                     
                 </p>
-            </li>
-            <hr />
+            </div>
+           
         <% }) %>
-    </ul>
+   
 </html>

@@ -31,8 +31,12 @@ app.use(
     })
 )
 //use '/' routes
+try{
 app.use('/',routes); 
+}catch(err){
 
+  console.log(err)
+}
 
 app.listen(port);
 
